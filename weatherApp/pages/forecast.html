@@ -1,0 +1,21 @@
+<p>
+    <a href="#/"> Back to Search</a>
+</p>
+
+Forecast for {{ city }}
+<hr />
+<!-- 
+    the ng-class attribute is chosen, since i want to highlight the 
+    particular day selected. Remember, days variable is in the scope
+-->
+Days: <a href="#/forecast/1" ng-class="{'bg-primary':days === '1' }">For today</a> | 
+<a href="#/forecast/2" ng-class="{'bg-primary':days === '2' }"> For 2 days</a> | 
+<a href="#/forecast/5" ng-class="{'bg-primary':days === '5' }"> For next 5 days </a>
+<div ng-repeat="w in weatherResult.list">
+    <div class="row">
+        <div class="col-md-12">
+            <weather-report weather-day="w" convert-to-standard="convertToCelcius(daytimeTemp)" convert-to-date="convertToDate(dt)" date-format="MMM d, y">
+            </weather-report>
+        </div>
+    </div>
+</div>
