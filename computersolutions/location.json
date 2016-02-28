@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "name": "Some location",
+    "address": "Some address",
+    "city": "xyz",
+    "state": "xyz state"
+  },
+  {
+    "id": 2,
+    "name": "Some location",
+    "address": "Some address",
+    "city": "xyz",
+    "state": "xyz state"
+  },
+  {
+    "id": 3,
+    "name": "Some location",
+    "address": "Some address",
+    "city": "xyz",
+    "state": "xyz state"
+  }
+  
+]
